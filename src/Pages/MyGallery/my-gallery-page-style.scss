@@ -1,0 +1,82 @@
+div.my-gallery-page{
+    & .show-my-gallerys-data{
+        & .child-group{
+            position: relative;
+            margin-right: 0;
+            margin-left: 0;
+            & .show-my-gallery-image-item{
+                float: left;
+                width: 25%;
+                padding: 5px 10px;
+                padding-bottom: 20px;
+                @media screen and (max-width: 768px) {
+                    float: none;
+                    width: 100%;
+                }
+                & .child{
+                    @mixin fixedToget(){
+                        padding-left: 10px;
+                    }
+                    & .show-image{
+                        & img{
+                            width: 100%;
+                            border-radius: 10px;
+                        }
+                    }
+                    & .show-info-status{
+                        @include fixedToget();
+                        & i.fa{
+                            font-size: 10px;
+                            padding-right: 4px;
+                        }
+                        & .show-category{
+                            padding-right: 5px;
+                            & span{
+                                font-size: 10px;
+                                & a{
+                                    color: black;
+                                }
+                            }
+                        }
+                        & .show-date{
+                            & span{
+                                font-size: 10px;
+                            }
+                        }
+                    }
+                    & .show-info-name{
+                        @include fixedToget();
+                        & h4{
+                            font-size: 16px;
+                            font-family: 'Times New Roman', Times, serif;
+                        }
+                    }
+                    & .show-btn-edit{
+                        @include fixedToget();
+                        padding-top: 10px;
+                        position: relative;
+                        height: 30px;
+                        & a:first-child{
+                            padding: 7px 10px;
+                            border-radius: 10px;
+                            background-color: red;
+                            color: white;
+                            &:hover{
+                                text-decoration: none;
+                                background: black;
+                            }
+                            @media screen and (max-width: 768px) {
+                                position: absolute;
+                                right: 0;
+                                top: 0;
+                                padding-right: 20px;
+                                padding-left: 20px;
+                                letter-spacing: 0.25em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

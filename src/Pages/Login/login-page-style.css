@@ -1,0 +1,72 @@
+.title-page {
+  text-align: center; }
+
+.sign-in-page {
+  padding: 0;
+  margin: 0; }
+  .sign-in-page .main-this {
+    padding-top: 80px; }
+    .sign-in-page .main-this form {
+      position: relative;
+      text-align: center; }
+      .sign-in-page .main-this form input {
+        max-width: 300px;
+        width: 300px;
+        margin-bottom: 10px; }
+      .sign-in-page .main-this form [type=text], .sign-in-page .main-this form [type=password] {
+        padding-right: 2px;
+        padding-left: 2px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        border: 1px solid #eeeeee; }
+      .sign-in-page .main-this form .label-small {
+        font-size: 8px;
+        padding: 0; }
+      .sign-in-page .main-this form .btn {
+        border: none;
+        padding: 0;
+        padding: 7px 2px;
+        max-width: 300px;
+        width: 300px; }
+        .sign-in-page .main-this form .btn.red {
+          background-color: red;
+          color: white; }
+    @media screen and (max-width: 768px) {
+      .sign-in-page .main-this {
+        margin-top: 40px; } }
+
+.sign-up-page {
+  padding: 0;
+  margin: 0; }
+  .sign-up-page .main-this {
+    padding-top: 80px; }
+    .sign-up-page .main-this form {
+      position: relative;
+      text-align: center; }
+      .sign-up-page .main-this form input {
+        max-width: 300px;
+        width: 300px;
+        margin-bottom: 10px; }
+      .sign-up-page .main-this form [type=text], .sign-up-page .main-this form [type=password] {
+        padding-right: 2px;
+        padding-left: 2px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        border: 1px solid #eeeeee; }
+      .sign-up-page .main-this form .label-small {
+        font-size: 8px;
+        padding: 0; }
+      .sign-up-page .main-this form .btn {
+        border: none;
+        padding: 0;
+        padding: 7px 2px;
+        max-width: 300px;
+        width: 300px; }
+        .sign-up-page .main-this form .btn.red {
+          background-color: red;
+          color: white; }
+    @media screen and (max-width: 768px) {
+      .sign-up-page .main-this {
+        margin-top: 40px; } }
+
+/*# sourceMappingURL=login-page-style.css.map */

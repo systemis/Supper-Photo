@@ -1,0 +1,35 @@
+body {
+  font-family: arial;
+  font-size: 12px; }
+  body .app {
+    position: relative; }
+    body .app .title-page {
+      font-family: Arial, Helvetica, sans-serif; }
+    body .app .login-page-header {
+      padding-top: 5px;
+      padding-bottom: 5px;
+      text-align: center;
+      width: 100%;
+      position: relative;
+      background: gray; }
+    body .app .footer {
+      width: 100%;
+      position: relative;
+      bottom: 1px;
+      padding-left: 10px;
+      padding-right: 10px;
+      font-size: "Lucida Console", Monaco, monospace;
+      font-size: 16px;
+      padding-left: 15px; }
+  body .show-app-name {
+    padding: 0;
+    margin: 0;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-weight: bold;
+    color: white; }
+    body .show-app-name.navbar-brand {
+      padding: 15px; }
+  body .header {
+    min-height: 52px; }
+
+/*# sourceMappingURL=App.css.map */

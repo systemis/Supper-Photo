@@ -1,0 +1,50 @@
+.title-page{ text-align: center; }
+@mixin together-form(){
+    padding: 0;
+    margin: 0;
+    & .main-this {
+        padding-top: 80px;
+        & form{
+            position: relative;
+            text-align: center;
+            & input {
+                max-width: 300px;
+                width: 300px;
+                margin-bottom: 10px;
+            }
+            & [type=text], & [type=password]{
+                padding-right: 2px;
+                padding-left: 2px;
+                padding-top: 7px;
+                padding-bottom: 7px;
+                border: 1px solid #eeeeee;
+            }
+            & .label-small{
+                font-size: 8px;
+                padding: 0;
+            }
+
+            & .btn{
+                border: none;
+                padding: 0;
+                padding: 7px 2px;
+                max-width: 300px;
+                width: 300px;
+                &.red{
+                    background-color: red;
+                    color: white;
+                }
+            }
+        }
+        @media screen and (max-width: 768px) {
+            margin-top: 40px;
+        }
+    }
+}
+
+.sign-in-page{
+    @include together-form();
+}
+.sign-up-page{
+    @include together-form();
+}
