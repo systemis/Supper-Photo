@@ -89,9 +89,10 @@ class AddNewProduct extends Component {
                             </label>
                             <select id="select-category-for-new-propduct">
                                 <option value="Travel"> Travel </option>
-                                <option value="Music"> Music </option>
-                                <option value="Education"> Education </option>
-                                <option value="Technology"> Technology </option>
+                                <option value="Girl">    Girl </option>
+                                <option value="Nature">  Nature </option>
+                                <option value="People">  People </option>
+                                <option value="Wedding"> Wedding</option>
                             </select>
                             <input type="hidden" value="Travel" id="input-new-product-category" name="category"/>
                             <input type="submit" className="btn btn-danger" value="Add."/>

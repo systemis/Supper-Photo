@@ -5,53 +5,68 @@ div.my-gallery-page .show-my-gallerys-data .child-group {
   div.my-gallery-page .show-my-gallerys-data .child-group .show-my-gallery-image-item {
     float: left;
     width: 25%;
-    padding: 5px 10px;
-    padding-bottom: 20px; }
+    padding: 5px 10px; }
     @media screen and (max-width: 768px) {
       div.my-gallery-page .show-my-gallerys-data .child-group .show-my-gallery-image-item {
         float: none;
         width: 100%; } }
-    div.my-gallery-page .show-my-gallerys-data .child-group .show-my-gallery-image-item .child .show-image img {
-      width: 100%;
-      border-radius: 10px; }
-    div.my-gallery-page .show-my-gallerys-data .child-group .show-my-gallery-image-item .child .show-info-status {
-      padding-left: 10px; }
-      div.my-gallery-page .show-my-gallerys-data .child-group .show-my-gallery-image-item .child .show-info-status i.fa {
-        font-size: 10px;
-        padding-right: 4px; }
-      div.my-gallery-page .show-my-gallerys-data .child-group .show-my-gallery-image-item .child .show-info-status .show-category {
-        padding-right: 5px; }
-        div.my-gallery-page .show-my-gallerys-data .child-group .show-my-gallery-image-item .child .show-info-status .show-category span {
+    div.my-gallery-page .show-my-gallerys-data .child-group .show-my-gallery-image-item .child {
+      padding-bottom: 20px;
+      border: 1px solid #eeeeee; }
+      div.my-gallery-page .show-my-gallerys-data .child-group .show-my-gallery-image-item .child .show-image {
+        position: relative; }
+        div.my-gallery-page .show-my-gallerys-data .child-group .show-my-gallery-image-item .child .show-image img {
+          width: 100%;
+          border-radius: 10px; }
+        div.my-gallery-page .show-my-gallerys-data .child-group .show-my-gallery-image-item .child .show-image span {
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          color: pink;
+          padding-left: 20px;
+          padding-bottom: 10px;
+          font-size: 15px; }
+          div.my-gallery-page .show-my-gallerys-data .child-group .show-my-gallery-image-item .child .show-image span .fa {
+            color: red;
+            padding-right: 9px; }
+      div.my-gallery-page .show-my-gallerys-data .child-group .show-my-gallery-image-item .child .show-info-status {
+        padding-left: 10px; }
+        div.my-gallery-page .show-my-gallerys-data .child-group .show-my-gallery-image-item .child .show-info-status i.fa {
+          font-size: 10px;
+          padding-right: 4px; }
+        div.my-gallery-page .show-my-gallerys-data .child-group .show-my-gallery-image-item .child .show-info-status .show-category {
+          padding-right: 5px; }
+          div.my-gallery-page .show-my-gallerys-data .child-group .show-my-gallery-image-item .child .show-info-status .show-category span {
+            font-size: 10px; }
+            div.my-gallery-page .show-my-gallerys-data .child-group .show-my-gallery-image-item .child .show-info-status .show-category span a {
+              color: black; }
+        div.my-gallery-page .show-my-gallerys-data .child-group .show-my-gallery-image-item .child .show-info-status .show-date span {
           font-size: 10px; }
-          div.my-gallery-page .show-my-gallerys-data .child-group .show-my-gallery-image-item .child .show-info-status .show-category span a {
-            color: black; }
-      div.my-gallery-page .show-my-gallerys-data .child-group .show-my-gallery-image-item .child .show-info-status .show-date span {
-        font-size: 10px; }
-    div.my-gallery-page .show-my-gallerys-data .child-group .show-my-gallery-image-item .child .show-info-name {
-      padding-left: 10px; }
-      div.my-gallery-page .show-my-gallerys-data .child-group .show-my-gallery-image-item .child .show-info-name h4 {
-        font-size: 16px;
-        font-family: 'Times New Roman', Times, serif; }
-    div.my-gallery-page .show-my-gallerys-data .child-group .show-my-gallery-image-item .child .show-btn-edit {
-      padding-left: 10px;
-      padding-top: 10px;
-      position: relative;
-      height: 30px; }
-      div.my-gallery-page .show-my-gallerys-data .child-group .show-my-gallery-image-item .child .show-btn-edit a:first-child {
-        padding: 7px 10px;
-        border-radius: 10px;
-        background-color: red;
-        color: white; }
-        div.my-gallery-page .show-my-gallerys-data .child-group .show-my-gallery-image-item .child .show-btn-edit a:first-child:hover {
-          text-decoration: none;
-          background: black; }
-        @media screen and (max-width: 768px) {
-          div.my-gallery-page .show-my-gallerys-data .child-group .show-my-gallery-image-item .child .show-btn-edit a:first-child {
-            position: absolute;
-            right: 0;
-            top: 0;
-            padding-right: 20px;
-            padding-left: 20px;
-            letter-spacing: 0.25em; } }
+      div.my-gallery-page .show-my-gallerys-data .child-group .show-my-gallery-image-item .child .show-info-name {
+        padding-left: 10px; }
+        div.my-gallery-page .show-my-gallerys-data .child-group .show-my-gallery-image-item .child .show-info-name h4 {
+          font-size: 16px;
+          font-family: 'Times New Roman', Times, serif; }
+      div.my-gallery-page .show-my-gallerys-data .child-group .show-my-gallery-image-item .child .show-btn-edit {
+        padding-left: 10px;
+        padding-top: 10px;
+        position: relative;
+        height: 30px; }
+        div.my-gallery-page .show-my-gallerys-data .child-group .show-my-gallery-image-item .child .show-btn-edit a:first-child {
+          padding: 7px 10px;
+          border-radius: 10px;
+          background-color: red;
+          color: white; }
+          div.my-gallery-page .show-my-gallerys-data .child-group .show-my-gallery-image-item .child .show-btn-edit a:first-child:hover {
+            text-decoration: none;
+            background: black; }
+          @media screen and (max-width: 768px) {
+            div.my-gallery-page .show-my-gallerys-data .child-group .show-my-gallery-image-item .child .show-btn-edit a:first-child {
+              position: absolute;
+              right: 0;
+              top: 0;
+              padding-right: 20px;
+              padding-left: 20px;
+              letter-spacing: 0.25em; } }
 
 /*# sourceMappingURL=my-gallery-page-style.css.map */

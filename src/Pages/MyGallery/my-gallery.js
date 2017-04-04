@@ -16,32 +16,24 @@ class MyGalleyPage extends Component {
         super(props);
 
         // My gallery data example 
-        this.state = { MyGalleryData: [
-            {
-                ImageItem: IM1,
-                Name: "Thiên hạ thái bình.",
-                Category: "Natural",
-                Date: new Date().toLocaleDateString()
-            },
-            {
-                ImageItem: IM2,
-                Name: "Thiên hạ thái bình.",
-                Category: "Natural",
-                Date: new Date().toLocaleDateString()
-            },
-            {
-                ImageItem: IM3,
-                Name: "Thiên hạ thái bình.",
-                Category: "Natural",
-                Date: new Date().toLocaleDateString()
-            },
-            {
-                ImageItem: IM2,
-                Name: "Thiên hạ thái bình.",
-                Category: "Natural",
-                Date: new Date().toLocaleDateString()
-            },
-        ]}
+        this.state = { MyGalleryData: []}
+
+        this.getMyProductServer();
+    }
+
+    getMyProductServer(){
+        const self = this;
+        $(document).ready(() => {
+            $.ajax({
+                url: '/get-my-gallerys', type: 'post',
+                success: (data) => {
+                    console.log(data);
+                    if(data !== 'err' && data.length > 0){
+                        self.setState({MyGalleryData: data});
+                    }
+                }
+            })
+        })
     }
 
     render() {

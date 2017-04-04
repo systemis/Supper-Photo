@@ -12,7 +12,7 @@ require('./home-page-style.css');
 var ShowCategoryItems = React.createClass({
     getInitialState(){
         return {Categorys: [
-            {Name: "Animals", Image: animalImage , Des: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur." },
+            {Name: "Travel", Image: animalImage , Des: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur." },
             {Name: "Girl"   , Image: girlImage   , Des: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur." },
             {Name: "Nature" , Image: natureImage , Des: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur." },
             {Name: "People" , Image: peopleImage , Des: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur." },
@@ -41,7 +41,7 @@ var ShowCategoryItems = React.createClass({
                                     </p>
                                 </div>
                                 <div className="show-visit-button">
-                                     <a href={"/gallery/" + value.Name.toLowerCase()}>   Visit Gallery
+                                     <a href={"/gallery/" + value.Name}>   Visit Gallery
                                     </a>
                                 </div>
                             </div>

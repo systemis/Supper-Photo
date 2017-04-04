@@ -8,19 +8,37 @@ div.my-gallery-page{
                 float: left;
                 width: 25%;
                 padding: 5px 10px;
-                padding-bottom: 20px;
+                
                 @media screen and (max-width: 768px) {
                     float: none;
                     width: 100%;
                 }
                 & .child{
+                    padding-bottom: 20px;
+                    border: 1px solid #eeeeee;
+
                     @mixin fixedToget(){
                         padding-left: 10px;
                     }
                     & .show-image{
+                        position: relative;
+
                         & img{
                             width: 100%;
                             border-radius: 10px;
+                        }
+                        & span{
+                            position: absolute;
+                            left: 0;
+                            bottom: 0;
+                            color: pink;
+                            padding-left: 20px;
+                            padding-bottom: 10px;
+                            font-size: 15px;
+                            & .fa{
+                                color: red;
+                                padding-right: 9px;
+                            }
                         }
                     }
                     & .show-info-status{

@@ -59,6 +59,9 @@ div.charts-page .show-charts-image .child-group .show-charts-item {
       .image-chart-item .item-parent .show-image .btnloveit:hover,
       .image-user-item .item-parent .show-image .btnloveit:hover {
         color: red; }
+      .image-chart-item .item-parent .show-image .btnloveit.red,
+      .image-user-item .item-parent .show-image .btnloveit.red {
+        color: red; }
   .image-chart-item .item-parent .show-image-name,
   .image-user-item .item-parent .show-image-name {
     padding: 0 2px; }

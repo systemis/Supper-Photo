@@ -63,6 +63,9 @@ div.charts-page{
                 &:hover{
                     color: red;
                 }
+                &.red{
+                    color: red;
+                }
             }
         }
         & .show-image-name{
