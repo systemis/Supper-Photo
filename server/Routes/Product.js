@@ -79,6 +79,7 @@ module.exports = (router) => {
         fileName = '';
     })
 
+    // Check to recognize user has liked the product ?
     router.post('/check-is-liked', (req, res) => {
         var user  = "%" + req.user.username;
         var productId = req.body.productId;
